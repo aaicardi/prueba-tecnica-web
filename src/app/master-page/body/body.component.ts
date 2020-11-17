@@ -20,6 +20,7 @@ export class BodyComponent implements OnInit {
 
   onLoad() {
     this.masterPageService.getAllEmployees().subscribe(response => {
+     this.elements = [];
      this.elements = response;
     }, err => {
     });
@@ -33,6 +34,7 @@ export class BodyComponent implements OnInit {
       this.modelFilter = new Filter();
       this.modelFilter.id = Number(valor);
       this.masterPageService.getById(this.modelFilter).subscribe(response => {
+        this.elements = [];
         this.elements.push(response);
        }, err => {
        });
