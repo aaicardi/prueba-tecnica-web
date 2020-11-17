@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  serviceUrlApiCore: 'https://localhost:44386/',
+  serviceUrlApiCore: 'http://graphicart-001-site20.ctempurl.com/',
 };
