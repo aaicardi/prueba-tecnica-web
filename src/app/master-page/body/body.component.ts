@@ -38,9 +38,6 @@ export class BodyComponent implements OnInit {
        });
     }
   }
-
-
-
   headElements  = ['id', 'name', 'contractTypeName', 'hourlySalary', 'monthlySalary', 'annualSalary'];
 
 }
